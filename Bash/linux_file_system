@@ -1,0 +1,84 @@
+linux file system :
+	1. bin: bin store all the binary files
+	1.1 sbin: bin files that the system user has the access like root user
+	2. boot: where all the boot related file store for example grub and bootloader file
+	3. cdrom: cd and dvd drives 
+	4. dev: where all the devices represent by files and folder are places like mouse, keyboard etc.
+	5. etc: holds all types of configuration file like apt and manymore. >> windows folder in c:/.
+	6. home: user files   >>> like opening the file manager in windows
+	7. lib & lib64: where libraries are present.	
+	8. media: any media like usb ,harddrive etc are shows in media
+	9. mnt: where all the mounted drives are shown
+	10. opt: where optional files and software store. >> program folder in c:/
+	11. tmp: where temporary files are stores. >> temp folder of windows
+	12. usr: where user specific data stores. >> like user folder in c:/
+	13. var: where all the logs , crash , backups are store it is work like ram >> temp or prefetch folder in windows
+	14. proc: processes are seen as files in this directory.
+	15. run: it shows the running process in the ram
+	16. srv: service data store for webservers
+	17. sys: it way to interact with karnel it create everytime when system boot
+
+Some linux command:
+	1. ls : it is used to list the file
+	2. ls -R : it shows the files in subfolders also
+	3. ls -l : shows the files with user permission and other info.
+	4. ls -a : shows hidden files.
+	
+	5. cat : it is used to create,display,combine and copy files
+	6. cat > file : create file if already created then it removes the data of the file and add new data
+	7. cat >> file : used to append file 
+	8. cat file1 file2 > newfile : it is used to concatenate two files.
+
+	9. rm : it removes files
+	10. cp : it copy files.
+	11. mv : it move files.
+	11. mv filename filename : it rename files. it's work for directory also.
+	12. mkdir <dir1> <dir2> .... : it is used to create directory.
+	13. man : mannual 
+	14. history : shows history	
+	15. less : for showing lesser data
+	16. more : vice versa of less command
+	17 pg: showing one page at a time
+	18 grep : to find string in a file.
+	19 sort : for sorting file
+
+RegEx (Regular expression):
+	^ : this means at the start
+	{0..10} : this print 0 to 10 number 
+	a{1..12}b -> output will be a1b a2b etc. 
+changing permission in linux:
+	1. by absolute mode(numeric mode):
+		0 -> no permission
+		1 -> execution.
+		2 -> write.
+		4 -> read.
+
+		example- chmod 764 file_name 
+	2. by symbolic mode:
+		+ -> for adding a permission
+		- -> removes permission
+		= -> sets and override the permission
+
+		user denotion
+		u -> user
+		g -> group
+		o -> other
+		a -> all
+
+changing ownership of a file or directory
+	chown command is used.
+	 chown user anyfile
+	 chown user:group anyfile
+	 chgrp group_anme file_name
+
+working as new group :
+	newgrp group_name
+	 
+redirecting the output and input by file descriptors:
+	0 : for input
+	1 : for output 
+	2 : for error
+
+
+
+
